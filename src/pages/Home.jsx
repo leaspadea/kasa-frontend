@@ -1,5 +1,6 @@
 import useFetch from '../hooks/useFetch'
 import Card from '../components/Card'
+import Slideshow from '../components/Slideshow'
 
 function Home() {
   const { data: properties } = useFetch('http://localhost:8080/api/properties')
