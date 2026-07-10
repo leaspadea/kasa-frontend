@@ -3,7 +3,7 @@ import Card from '../components/Card'
 
 function Home() {
   const { data: properties } = useFetch('http://localhost:8080/api/properties')
-  
+
   return (
     <div>
       <h1>Accueil</h1>
