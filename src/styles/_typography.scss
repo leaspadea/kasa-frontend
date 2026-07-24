@@ -1,0 +1,15 @@
+@use "./variables" as *;
+
+body{
+    font-family: $font-main;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+

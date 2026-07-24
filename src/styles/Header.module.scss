@@ -1,0 +1,20 @@
+@use "./variables" as *;
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
+.logo {
+    max-height: 68px;
+    width: auto;
+    color: $color-primary;
+}
+
+.nav {
+    gap: 57px;
+    display: flex;
+}

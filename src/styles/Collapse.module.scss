@@ -1,0 +1,56 @@
+@use "./variables" as *;
+
+.collapse {
+    margin-bottom: 20px;
+}
+
+.header {
+    border: none;
+    background-color: $color-primary;
+    color: $color-white;
+    font-weight: bold;
+    width: 100%;
+    height: 52px;
+    font-size: 18px;
+    border-radius: $radius;
+    padding-inline: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows 0.3s ease-out;
+    border-radius: $radius;
+    margin-top: -$radius;
+}
+
+.content.open {
+    grid-template-rows: 1fr;
+}
+
+.contentInner {
+    overflow: hidden;
+    min-height: 0;
+}
+
+.contentBody {
+  background-color: $color-secondary;
+  padding: 30px;
+}
+
+// Chevron : pointe vers le bas fermé, pivote à l'ouverture
+.chevron {
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.header[aria-expanded="true"] .chevron {
+    transform: rotate(180deg);
+}

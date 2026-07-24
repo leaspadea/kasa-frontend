@@ -1,0 +1,93 @@
+@use "./variables" as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px 0 24px;
+}
+
+// --- Groupe gauche : titre, localisation, tags ---
+.info h1 {
+    color: $color-primary;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.location {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.tags li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-primary;
+    color: $color-white;
+    border-radius: $radius;
+    padding: 5px 20px;
+    min-width: 84px;
+    height: 25px;
+    font-size: 14px;
+}
+
+// --- Groupe droit : hôte + note ---
+.host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.hostName {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hostName p {
+    color: $color-primary;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.hostName img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.rating {
+    display: flex;
+    font-size: 24px;
+}
+
+.starFilled {
+    color: $color-primary;
+}
+
+.starEmpty {
+    color: #d9d9d9; // gris des étoiles vides (à passer en variable si réutilisé)
+}
+
+// --- Les deux panneaux côte à côte ---
+.collapses {
+    display: flex;
+    gap: 76px;
+    align-items: flex-start;
+    margin-top: 24px;
+}
+
+.collapses > div {
+    flex: 1; // chaque collapse prend la même largeur
+}

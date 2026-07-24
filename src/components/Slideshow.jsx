@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import styles from '../styles/Slideshow.module.scss'
 
 function Slideshow({ pictures, title }) {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -21,11 +22,11 @@ function Slideshow({ pictures, title }) {
   const showControls = pictures.length > 1
   
   return (
-    <div className="slideshow">
+    <div className={styles.slideshow}>
       {showControls && (
         <button
           type="button"
-          className="slideshow__arrow slideshow__arrow--left"
+          className={`${styles.arrow} ${styles.left}`}
           onClick={goToPrevious}
           aria-label="Image précédente"
         >
@@ -38,7 +39,7 @@ function Slideshow({ pictures, title }) {
       {showControls && (
         <button
           type="button"
-          className="slideshow__arrow slideshow__arrow--right"
+          className={`${styles.arrow} ${styles.right}`}
           onClick={goToNext}
           aria-label="Image suivante"
         >
@@ -47,7 +48,7 @@ function Slideshow({ pictures, title }) {
       )}
 
       {showControls && (
-        <p className="slideshow__counter">
+        <p className={styles.counter}>
           {currentIndex + 1}/{pictures.length}
         </p>
       )}

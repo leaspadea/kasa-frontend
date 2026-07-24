@@ -1,0 +1,9 @@
+@use "./variables" as *;
+
+.container{
+    max-width: $container-max-width;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    flex: 1;
+}

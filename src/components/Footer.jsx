@@ -1,7 +1,12 @@
+import styles from "../styles/Footer.module.scss";
+import Logo from "../assets/logo.svg?react";
+
+
 function Footer() {
   return (
-    <footer>
-      <p>© 2025 Kasa. All rights reserved</p>
+    <footer className={styles.section}>
+      <Logo role="img" aria-label="Kasa" className={styles.logo}/>
+      <p>© 2020 Kasa. All rights reserved</p>
     </footer>
   )
 }
