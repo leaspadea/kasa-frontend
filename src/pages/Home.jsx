@@ -1,4 +1,5 @@
 import useFetch from '../hooks/useFetch'
+import { Link } from 'react-router'
 import Card from '../components/Card'
 import Slideshow from '../components/Slideshow'
 
@@ -9,7 +10,9 @@ function Home() {
     <div>
       <h1>Accueil</h1>
       {properties.map((property) => (
-        <Card key={property.id} title={property.title} cover={property.cover} />
+        <Link key={property.id} to={`/logement/${property.id}`}>
+          <Card title={property.title} cover={property.cover} />
+        </Link>
       ))}
     </div>
   )

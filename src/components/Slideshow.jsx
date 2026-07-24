@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function Slideshow({ pictures }) {
+function Slideshow({ pictures, title }) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
 
@@ -33,7 +33,7 @@ function Slideshow({ pictures }) {
         </button>
       )}
 
-      <img src={pictures[currentIndex]} alt="" />
+      <img src={pictures[currentIndex]} alt={title} />
 
       {showControls && (
         <button
