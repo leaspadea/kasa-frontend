@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/breakpoints" as *; 
 
 .gallery {
   display: grid;
@@ -6,11 +7,22 @@
   gap: 50px;
   margin-bottom: 40px;
   padding: 50px;
-  background: #f6f6f6;
+  background-color: $color-secondary;
   border-radius: 25px;
 
+   @include mobile {
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    padding: 0px;
+    background-color: $color-white;
+    margin-bottom: 20px;
+   }
 }
 
 .gallery a {
   text-decoration: none;
+
+  @include mobile {
+
+  }
 }

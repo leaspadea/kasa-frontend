@@ -1,23 +1,11 @@
-// Breakpoints
+// Responsive desktop-first : la base est écrite pour desktop,
+// on adapte vers le bas (mobile) avec des media queries max-width.
+// Un seul breakpoint : en dessous de cette largeur = affichage mobile.
 
-$break-mobile-large: 601px; // au-delà : mobile large
-$break-tablet: 721px; // au-delà : tablette
-$break-desktop: 961px; // au-delà : desktop
+$breakpoint-mobile: 768px;
 
-@mixin respond-to($breakpoint) {
-  @if $breakpoint == tablet {
-    @media (min-width: $break-tablet) {
-      @content;
-    }
-  } @else if $breakpoint == desktop {
-    @media (min-width: $break-desktop) {
-      @content;
-    }
-  } @else if $breakpoint == mobile-large {
-    @media (min-width: $break-mobile-large) {
-      @content;
-    }
-  } @else {
-    @error "Breakpoint inconnu: #{$breakpoint}";
+@mixin mobile {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
   }
 }

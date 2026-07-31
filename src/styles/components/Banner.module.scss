@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/breakpoints" as *;
 
 .banner {
   position: relative;
@@ -8,6 +9,12 @@
   margin-bottom: 40px;
   box-shadow: 0px 4px 4px 0px #00000040;
 
+  @include mobile {
+    height: 111px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
 
   img {
     position: absolute;
@@ -16,7 +23,7 @@
     height: 100%;
     object-fit: cover;
     z-index: 0;
-    
+
 
   }
 
@@ -37,7 +44,13 @@
     justify-content: center;
     align-items: center;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-    
+
+    @include mobile {
+      font-size: 24px;
+      text-align: left;
+      padding: 0 20px;
+    }
+
 
   }
 }

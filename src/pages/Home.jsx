@@ -11,7 +11,7 @@ function Home() {
   return (
     <div>
       <Banner image={banner}>
-        <h1>Chez vous, partout et ailleurs</h1>
+        <h1>Chez vous, partout{'\u00A0'}et{'\u00A0'}ailleurs</h1>
       </Banner>
       <div className={styles.gallery}>
         {properties.map((property) => (
