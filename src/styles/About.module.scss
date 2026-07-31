@@ -1,0 +1,6 @@
+@use "./variables" as *;
+
+.collapses {
+    max-width: 1023px;
+    margin: 0 auto; // centre les collapses dans le main de 1240px
+}

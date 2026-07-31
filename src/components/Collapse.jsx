@@ -21,7 +21,7 @@ function Collapse({ title, content }) {
           aria-hidden="true"
         >
           <path
-            d="M1 1L10 10L19 1"
+            d="M1 10L10 1L19 10"
             stroke="currentColor"
             strokeWidth="2"
             fill="none"

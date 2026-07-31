@@ -1,8 +1,8 @@
 import useFetch from '../hooks/useFetch'
 import { Link } from 'react-router'
 import Card from '../components/Card'
-import Slideshow from '../components/Slideshow'
-import banner from '../assets/photo_fond.jpg'
+import Banner from '../components/Banner'
+import banner from '../assets/banner_homepage.jpg'
 import styles from '../styles/Home.module.scss'
 
 function Home() {
@@ -10,16 +10,15 @@ function Home() {
 
   return (
     <div>
-      <div className={styles.banner}>
-        <img src={banner} alt="Photo de falaise" />
+      <Banner image={banner}>
         <h1>Chez vous, partout et ailleurs</h1>
-      </div>
+      </Banner>
       <div className={styles.gallery}>
-      {properties.map((property) => (
-        <Link key={property.id} to={`/logement/${property.id}`}>
-          <Card title={property.title} cover={property.cover} />
-        </Link>
-      ))}
+        {properties.map((property) => (
+          <Link key={property.id} to={`/logement/${property.id}`}>
+            <Card title={property.title} cover={property.cover} />
+          </Link>
+        ))}
       </div>
     </div>
   )

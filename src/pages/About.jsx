@@ -1,4 +1,7 @@
 import Collapse from "../components/Collapse"
+import Banner from '../components/Banner'
+import banner from '../assets/banner_about.jpg'
+import styles from '../styles/About.module.scss'
 
 const aboutSections = [
   {
@@ -26,9 +29,12 @@ const aboutSections = [
 function About() {
   return (
     <div>
+      <Banner image={banner} overlay={0.3} />
+      <div className={styles.collapses}>
       {aboutSections.map((section) => (
         <Collapse key={section.title} title={section.title} content={section.content} />
       ))}
+      </div>
     </div>
   )
 }
