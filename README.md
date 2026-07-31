@@ -34,19 +34,21 @@ Kasa est une entreprise de location d'appartements entre particuliers. Elle souh
 
 ## 📐 Structure du projet
 
+```text
 Kasa/
 ├── src/
-│ ├── components/ # Header, Footer, Card, Collapse, Slideshow, Banner, Layout
-│ ├── pages/ # Home, Housing, About, Error
-│ ├── styles/ # abstracts/, base/, components/, pages/ + main.scss
-│ ├── hooks/ # useFetch (hook personnalisé pour les appels API)
-│ ├── assets/ # images, logo
-│ ├── App.jsx # Configuration du routeur
-│ └── main.jsx # Point d'entrée de l'application
+│   ├── components/       # Header, Footer, Card, Collapse, Slideshow, Banner, Layout
+│   ├── pages/            # Home, Housing, About, Error
+│   ├── styles/           # abstracts/, base/, components/, pages/ + main.scss
+│   ├── hooks/            # useFetch (hook personnalisé pour les appels API)
+│   ├── assets/           # images, logo
+│   ├── App.jsx           # Configuration du routeur
+│   └── main.jsx          # Point d'entrée de l'application
 ├── public/
 ├── package.json
 ├── vite.config.js
 └── README.md
+```
 
 ## 🎓 Compétences travaillées
 
