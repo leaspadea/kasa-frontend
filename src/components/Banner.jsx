@@ -1,4 +1,4 @@
-import styles from '../styles/Banner.module.scss'
+import styles from '../styles/components/Banner.module.scss'
 
 function Banner({ image, overlay = 0.6, children }) {
   return (

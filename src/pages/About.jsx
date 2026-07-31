@@ -1,7 +1,7 @@
 import Collapse from "../components/Collapse"
 import Banner from '../components/Banner'
 import banner from '../assets/banner_about.jpg'
-import styles from '../styles/About.module.scss'
+import styles from '../styles/pages/About.module.scss'
 
 const aboutSections = [
   {

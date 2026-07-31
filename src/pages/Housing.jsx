@@ -2,7 +2,7 @@ import { useParams, Navigate } from 'react-router'
 import useFetch from '../hooks/useFetch'
 import Slideshow from '../components/Slideshow'
 import Collapse from '../components/Collapse'
-import styles from '../styles/Housing.module.scss'
+import styles from '../styles/pages/Housing.module.scss'
 
 function Housing() {
   const { id } = useParams()

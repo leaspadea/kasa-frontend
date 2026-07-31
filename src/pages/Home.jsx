@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import Card from '../components/Card'
 import Banner from '../components/Banner'
 import banner from '../assets/banner_homepage.jpg'
-import styles from '../styles/Home.module.scss'
+import styles from '../styles/pages/Home.module.scss'
 
 function Home() {
   const { data: properties } = useFetch('http://localhost:8080/api/properties')

@@ -1,4 +1,4 @@
-import styles from "../styles/Card.module.scss"
+import styles from "../styles/components/Card.module.scss"
 
 function Card({ title, cover }) {
   return (
