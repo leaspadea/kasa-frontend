@@ -50,6 +50,10 @@
 .contentBody {
   background-color: $color-secondary;
   padding: 30px 20px;
+
+  @include mobile {
+    font-size: 13px;
+  }
 }
 
 // Chevron : pointe vers le bas fermé, pivote à l'ouverture
