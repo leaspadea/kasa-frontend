@@ -28,7 +28,7 @@ const aboutSections = [
 
 function About() {
   return (
-    <div>
+    <div className={styles.about}>
       <Banner image={banner} overlay={0.3} />
       <div className={styles.collapses}>
       {aboutSections.map((section) => (

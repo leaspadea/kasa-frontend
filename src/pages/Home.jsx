@@ -9,7 +9,7 @@ function Home() {
   const { data: properties } = useFetch('http://localhost:8080/api/properties')
 
   return (
-    <div>
+    <div className={styles.home}>
       <Banner image={banner}>
         <h1>Chez vous, partout{'\u00A0'}et{'\u00A0'}ailleurs</h1>
       </Banner>

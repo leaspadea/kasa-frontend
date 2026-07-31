@@ -1,9 +1,41 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/breakpoints" as *;
 
 .section {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  
 }
+
+.section h1 {
+  font-size: 244px;
+  color: $color-primary;
+
+  @include mobile {
+    font-size: 96px;
+  }
+
+}
+
+.section p {
+  font-size: 36px;
+  color: $color-primary;
+
+  @include mobile {
+    font-size: 18px;
+    max-width: 260px;
+    text-align: center;
+  }
+}
+
+.section a {
+  font-size: 18px;
+
+  @include mobile {
+    font-size: 14px;
+  }
+}
+

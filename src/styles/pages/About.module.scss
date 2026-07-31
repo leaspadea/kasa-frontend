@@ -1,4 +1,13 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/breakpoints" as *;
+
+.about {
+    margin-top: $header-gap;
+
+    @include mobile {
+        margin-top: $header-gap-mobile;
+    }
+}
 
 .collapses {
     max-width: 1023px;

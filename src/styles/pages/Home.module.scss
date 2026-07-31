@@ -1,5 +1,13 @@
 @use "../abstracts/variables" as *;
-@use "../abstracts/breakpoints" as *; 
+@use "../abstracts/breakpoints" as *;
+
+.home {
+  margin-top: $header-gap;
+
+  @include mobile {
+    margin-top: $header-gap-mobile;
+  }
+}
 
 .gallery {
   display: grid;

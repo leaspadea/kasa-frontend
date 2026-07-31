@@ -6,11 +6,10 @@
     align-items: center;
     justify-content: space-between;
     font-size: 24px;
-    margin-bottom: 60px;
+    
 
     @include mobile {
         font-size: 12px;
-        margin-bottom: 40px;
     }
 }
 
@@ -27,9 +26,10 @@
 .nav {
     gap: 57px;
     display: flex;
-    text-transform: uppercase;
+    
 
     @include mobile {
         gap: 26px;
+        text-transform: uppercase;
     }
 }
