@@ -60,7 +60,7 @@ function Housing() {
       <div className={styles.collapses}>
         <Collapse title="Description" content={property.description} />
         <Collapse title="Équipements" content={
-          <ul>
+          <ul className={styles.equipments}>
             {property.equipments.map((equipement) => (
               <li key={equipement}>{equipement}</li>
             ))}
