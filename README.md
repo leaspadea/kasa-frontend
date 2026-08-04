@@ -35,7 +35,7 @@ Kasa est une entreprise de location d'appartements entre particuliers. Elle souh
 ## 📐 Structure du projet
 
 ```text
-Kasa/
+kasa-frontend/
 ├── src/
 │   ├── components/       # Header, Footer, Card, Collapse, Slideshow, Banner, Layout
 │   ├── pages/            # Home, Housing, About, Error
@@ -63,22 +63,22 @@ Kasa/
 
 ## 📦 Prérequis
 
-- **Node.js** (version 16 ou supérieure)
+- **Node.js** (version 20 ou supérieure ; projet développé avec Node 24)
 - **npm**
 - **Docker** (optionnel, pour lancer l'API facilement)
 
 ## 🚀 Installation
 
-Le projet nécessite de lancer **deux serveurs** en parallèle : l'API (port 8080) et le front (port 5173).
+Le projet nécessite de lancer **deux serveurs** en parallèle : l'**API** (fournie par OpenClassrooms, dans un **dépôt séparé** — port 8080) et le **front** (ce dépôt — port 5173).
 
-### 1. Cloner le dépôt
+### 1. Lancer l'API (dépôt séparé)
+
+L'API est un projet distinct, à cloner et lancer à part :
 
 ```bash
-git clone https://github.com/leaspadea/kasa.git
-cd kasa
+git clone https://github.com/OpenClassrooms-Student-Center/TesteurLogiciel_appli_location_immobiliere_React.git
+cd TesteurLogiciel_appli_location_immobiliere_React
 ```
-
-### 2. Lancer l'API (backend)
 
 **Option A — avec Docker (recommandé)**
 
@@ -86,7 +86,7 @@ cd kasa
 docker compose up -d
 ```
 
-**Option B — avec Node**
+**Option B — avec Node** (si Docker n'est pas installé)
 
 ```bash
 cd backend
@@ -98,11 +98,13 @@ L'API tourne alors sur `http://localhost:8080` et expose les routes :
 - `GET /api/properties` — liste des logements
 - `GET /api/properties/:id` — détail d'un logement
 
-### 3. Lancer le front
+### 2. Lancer le front (ce dépôt)
 
-Dans un autre terminal, à la racine du projet :
+Dans un autre terminal :
 
 ```bash
+git clone https://github.com/leaspadea/kasa-frontend.git
+cd kasa-frontend
 npm install
 npm run dev
 ```
